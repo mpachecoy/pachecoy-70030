@@ -1,0 +1,427 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.create, read & destroy one user": 400,
+      "vusers.created": 400,
+      "http.requests": 400,
+      "http.codes.404": 400,
+      "http.responses": 400,
+      "http.downloaded_bytes": 61600,
+      "plugins.metrics-by-endpoint./api/users/mocks.codes.404": 400,
+      "errors.Failed capture or match": 400,
+      "vusers.failed": 400
+    },
+    "rates": {
+      "http.request_rate": 20
+    },
+    "firstCounterAt": 1730301738707,
+    "firstHistogramAt": 1730301738735,
+    "lastCounterAt": 1730301758682,
+    "lastHistogramAt": 1730301758682,
+    "firstMetricAt": 1730301738707,
+    "lastMetricAt": 1730301758682,
+    "period": 1730301750000,
+    "summaries": {
+      "http.response_time": {
+        "min": 0,
+        "max": 126,
+        "count": 400,
+        "mean": 0.9,
+        "p50": 1,
+        "median": 1,
+        "p75": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 4,
+        "p999": 10.1
+      },
+      "http.response_time.4xx": {
+        "min": 0,
+        "max": 126,
+        "count": 400,
+        "mean": 0.9,
+        "p50": 1,
+        "median": 1,
+        "p75": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 4,
+        "p999": 10.1
+      },
+      "plugins.metrics-by-endpoint.response_time./api/users/mocks": {
+        "min": 0,
+        "max": 126,
+        "count": 400,
+        "mean": 0.9,
+        "p50": 1,
+        "median": 1,
+        "p75": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 4,
+        "p999": 10.1
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 0,
+        "max": 126,
+        "count": 400,
+        "mean": 0.9,
+        "p50": 1,
+        "median": 1,
+        "p75": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 4,
+        "p999": 10.1
+      },
+      "http.response_time.4xx": {
+        "min": 0,
+        "max": 126,
+        "count": 400,
+        "mean": 0.9,
+        "p50": 1,
+        "median": 1,
+        "p75": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 4,
+        "p999": 10.1
+      },
+      "plugins.metrics-by-endpoint.response_time./api/users/mocks": {
+        "min": 0,
+        "max": 126,
+        "count": 400,
+        "mean": 0.9,
+        "p50": 1,
+        "median": 1,
+        "p75": 1,
+        "p90": 1,
+        "p95": 1,
+        "p99": 4,
+        "p999": 10.1
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.create, read & destroy one user": 26,
+        "vusers.created": 26,
+        "http.requests": 26,
+        "http.codes.404": 26,
+        "http.responses": 26,
+        "http.downloaded_bytes": 4004,
+        "plugins.metrics-by-endpoint./api/users/mocks.codes.404": 26,
+        "errors.Failed capture or match": 26,
+        "vusers.failed": 26
+      },
+      "rates": {
+        "http.request_rate": 26
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1730301738707,
+      "firstHistogramAt": 1730301738735,
+      "lastCounterAt": 1730301739962,
+      "lastHistogramAt": 1730301739962,
+      "firstMetricAt": 1730301738707,
+      "lastMetricAt": 1730301739962,
+      "period": "1730301730000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 10,
+          "count": 26,
+          "mean": 1.6,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 4,
+          "p99": 7.9,
+          "p999": 7.9
+        },
+        "http.response_time.4xx": {
+          "min": 0,
+          "max": 10,
+          "count": 26,
+          "mean": 1.6,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 4,
+          "p99": 7.9,
+          "p999": 7.9
+        },
+        "plugins.metrics-by-endpoint.response_time./api/users/mocks": {
+          "min": 0,
+          "max": 10,
+          "count": 26,
+          "mean": 1.6,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 4,
+          "p99": 7.9,
+          "p999": 7.9
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 10,
+          "count": 26,
+          "mean": 1.6,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 4,
+          "p99": 7.9,
+          "p999": 7.9
+        },
+        "http.response_time.4xx": {
+          "min": 0,
+          "max": 10,
+          "count": 26,
+          "mean": 1.6,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 4,
+          "p99": 7.9,
+          "p999": 7.9
+        },
+        "plugins.metrics-by-endpoint.response_time./api/users/mocks": {
+          "min": 0,
+          "max": 10,
+          "count": 26,
+          "mean": 1.6,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 2,
+          "p95": 4,
+          "p99": 7.9,
+          "p999": 7.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.create, read & destroy one user": 200,
+        "vusers.created": 200,
+        "http.requests": 200,
+        "http.codes.404": 200,
+        "http.responses": 200,
+        "http.downloaded_bytes": 30800,
+        "plugins.metrics-by-endpoint./api/users/mocks.codes.404": 200,
+        "errors.Failed capture or match": 200,
+        "vusers.failed": 200
+      },
+      "rates": {
+        "http.request_rate": 20
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1730301740039,
+      "firstHistogramAt": 1730301740042,
+      "lastCounterAt": 1730301749993,
+      "lastHistogramAt": 1730301749993,
+      "firstMetricAt": 1730301740039,
+      "lastMetricAt": 1730301749993,
+      "period": "1730301740000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 126,
+          "count": 200,
+          "mean": 1.2,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 3,
+          "p999": 5
+        },
+        "http.response_time.4xx": {
+          "min": 0,
+          "max": 126,
+          "count": 200,
+          "mean": 1.2,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 3,
+          "p999": 5
+        },
+        "plugins.metrics-by-endpoint.response_time./api/users/mocks": {
+          "min": 0,
+          "max": 126,
+          "count": 200,
+          "mean": 1.2,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 3,
+          "p999": 5
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 126,
+          "count": 200,
+          "mean": 1.2,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 3,
+          "p999": 5
+        },
+        "http.response_time.4xx": {
+          "min": 0,
+          "max": 126,
+          "count": 200,
+          "mean": 1.2,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 3,
+          "p999": 5
+        },
+        "plugins.metrics-by-endpoint.response_time./api/users/mocks": {
+          "min": 0,
+          "max": 126,
+          "count": 200,
+          "mean": 1.2,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 3,
+          "p999": 5
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.create, read & destroy one user": 174,
+        "vusers.created": 174,
+        "http.requests": 174,
+        "http.codes.404": 174,
+        "http.responses": 174,
+        "http.downloaded_bytes": 26796,
+        "plugins.metrics-by-endpoint./api/users/mocks.codes.404": 174,
+        "errors.Failed capture or match": 174,
+        "vusers.failed": 174
+      },
+      "rates": {
+        "http.request_rate": 20
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1730301750039,
+      "firstHistogramAt": 1730301750041,
+      "lastCounterAt": 1730301758682,
+      "lastHistogramAt": 1730301758682,
+      "firstMetricAt": 1730301750039,
+      "lastMetricAt": 1730301758682,
+      "period": "1730301750000",
+      "summaries": {
+        "http.response_time": {
+          "min": 0,
+          "max": 4,
+          "count": 174,
+          "mean": 0.5,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 1,
+          "p999": 1
+        },
+        "http.response_time.4xx": {
+          "min": 0,
+          "max": 4,
+          "count": 174,
+          "mean": 0.5,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 1,
+          "p999": 1
+        },
+        "plugins.metrics-by-endpoint.response_time./api/users/mocks": {
+          "min": 0,
+          "max": 4,
+          "count": 174,
+          "mean": 0.5,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 1,
+          "p999": 1
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 0,
+          "max": 4,
+          "count": 174,
+          "mean": 0.5,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 1,
+          "p999": 1
+        },
+        "http.response_time.4xx": {
+          "min": 0,
+          "max": 4,
+          "count": 174,
+          "mean": 0.5,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 1,
+          "p999": 1
+        },
+        "plugins.metrics-by-endpoint.response_time./api/users/mocks": {
+          "min": 0,
+          "max": 4,
+          "count": 174,
+          "mean": 0.5,
+          "p50": 1,
+          "median": 1,
+          "p75": 1,
+          "p90": 1,
+          "p95": 1,
+          "p99": 1,
+          "p999": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[31mfatal[39m: GET /api/users - ERRORS IS NOT DEFINED
+[33merror[39m: GET /api/users - NOT FOUND
+[31mfatal[39m: GET /api/users - CANNOT READ PROPERTIES OF UNDEFINED (READING 'LENGTH')
+[31mfatal[39m: GET /api/users - CANNOT READ PROPERTIES OF UNDEFINED (READING 'LENGTH')
+[31mfatal[39m: GET /api/users - NEXT IS NOT A FUNCTION
+[31mfatal[39m: GET /api/users - NEXT IS NOT A FUNCTION
+[31mfatal[39m: GET /api/users - OPERATION `USERS.FIND()` BUFFERING TIMED OUT AFTER 10000MS
+[33merror[39m: GET /api/users - NOT FOUND
+[31mfatal[39m: GET /api/users - THIS.DAO.GET IS NOT A FUNCTION
+[31mfatal[39m: GET /api/users/simplex - CAST TO OBJECTID FAILED FOR VALUE "SIMPLEX" (TYPE STRING) AT PATH "_ID" FOR MODEL "USERS"
+[31mfatal[39m: GET /api/users/mock - CAST TO OBJECTID FAILED FOR VALUE "MOCK" (TYPE STRING) AT PATH "_ID" FOR MODEL "USERS"

@@ -1,0 +1,40 @@
+{
+  "name": "pachecoy-70030",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js -p 8080 --mode=dev",
+    "test": "node ./app.js -p 9000 --mode=test",
+    "simplex": "artillery quick --count 20 --num 100 'http://localhost:8080/api/simplex' -o ./test/artillery/quick/simplex.json",
+    "complex": "artillery quick --count 20 --num 100 'http://localhost:8080/api/complex' -o ./test/artillery/quick/complex.json",
+    "flow": "artillery run ./test/artillery/flow.yaml -o ./test/artillery/flow.json",
+    "report": "artillery report ./test/artillery/flow.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.1.0",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "artillery-plugin-metrics-by-endpoint": "^1.15.0",
+    "bcrypt": "^5.1.1",
+    "commander": "^12.1.0",
+    "cookie-parser": "^1.4.7",
+    "docker": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-compression": "^1.0.2",
+    "mongoose": "^8.7.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "uuid": "^10.0.0",
+    "winston": "^3.15.0"
+  }
+}
