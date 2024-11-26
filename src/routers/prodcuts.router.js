@@ -9,5 +9,4 @@ router.get("/", ProductsController.getProducts);
 router.get("/:pid", ProductsController.getBy);
 router.put("/:pid", passportCall("current"), access("admin"), ProductsController.update);
 router.post("/", passportCall("current"), access("admin"), ProductsController.create);
-router.get("/mocks/:quantity",  ProductsController.createMock);
 router.delete("/:pid", passportCall("current"), access("admin"), ProductsController.delete);

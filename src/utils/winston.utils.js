@@ -15,4 +15,4 @@ const winstonLogger = createLogger({
     ]
 });
 
-export default winstonLogger;
+export default winstonLogger

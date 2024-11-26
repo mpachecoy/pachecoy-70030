@@ -1,9 +1,7 @@
 import express from "express";
 import args from "./src/utils/args.utils.js";
 import dbConnect from "./src/utils/db.utils.js";
-import { router as usersRouter } from "./src/routers/users.router.js";
-import { router as productRouter} from "./src/routers/prodcuts.router.js";
-import { router as sessionsRouter } from "./src/routers/session.router.js";
+import { router as indexRouter } from "./src/routers/index.router.js";
 import errorHandler from "./src/middlewares/errorHandler.middleware.js";
 import compression from "express-compression";
 import winston from "./src/middlewares/winstonLogger.middleware.js";
@@ -32,8 +30,6 @@ server.use(compression({
 iniciaPassport();
 server.use(passport.initialize());
 
-server.use("/api/sessions", sessionsRouter);
-server.use("/api/users", usersRouter);
-server.use("/api/products", productRouter);
+server.use("/api", indexRouter);
 
 server.use(errorHandler);

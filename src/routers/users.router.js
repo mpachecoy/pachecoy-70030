@@ -6,8 +6,7 @@ export const router = Router();
 
 router.get("/", auth, UserController.getUsers);
 router.get("/:uid", auth, UserController.getBy);
-router.get("/users/mock", auth, UserController.createMock);
-router.get("/users/mocks/:quantity", auth, UserController.createMocks);
+
 
 router.get("/simplex", (req, res) => {
     return res.status(200).json({ message: "OK" });

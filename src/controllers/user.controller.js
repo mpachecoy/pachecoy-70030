@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 import CustomError from "../utils/errors/CustomError.utils.js";
-import winstonLogger from "../utils/winston.utils.js";
+import winstonLogger  from "../utils/winston.utils.js";
 import { userService } from "../services/user.service.js";
 import errors from "../utils/errors/errors.js";
 
