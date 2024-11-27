@@ -10,7 +10,7 @@ scenarios:
     flow:
       - log: create one mock
       - get:
-          url: /users/mocks
+          url: /mocks/users/mocks
           capture:
             - json: $.response._id
               as: uid

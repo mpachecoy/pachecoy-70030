@@ -80,4 +80,17 @@ export default class UserController{
         }
     };
 
+    static async delete (req, res, next){
+        try {
+            const { uid } = req.params;
+            const user = await userService.delete(uid);
+            if(!user) return res.status(404).json({ status: "error", msg: "Usuario no encontrado"});
+            await userService.delete(uid);
+        
+            res.status(200).json({status:"ok", msg: `Usuario eliminado con exito ${uid}`});
+        } catch (error) {
+            return next(error);
+        };
+    };
+
 };

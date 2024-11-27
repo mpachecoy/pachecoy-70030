@@ -12,5 +12,8 @@ export class UserDao{
     };
     static async updateUser(id, user){
         return await userModel.updateOne({_id:id} , user);
-    }
+    };
+    static async delete(filter){
+        return await userModel.findOneAndDelete(filter)
+    };
 }

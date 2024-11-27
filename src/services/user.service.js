@@ -23,7 +23,7 @@ class UserService{
     };
 
     async update(filter, user){
-        return await this.dao.update(filter, );
+        return await this.dao.update(filter, user);
     };
 
     async delete(filter){
