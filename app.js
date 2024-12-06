@@ -8,7 +8,6 @@ import winston from "./src/middlewares/winstonLogger.middleware.js";
 import cookieParser from "cookie-parser";
 import { iniciaPassport } from "./src/cofig/passport.cofig.js";
 import passport from "passport";
-import swaggerJsdoc from "swagger-jsdoc";
 import { serve, setup } from "swagger-ui-express";
 import opts from "./src/utils/swagger.util.js";
 import cluster from "cluster";
