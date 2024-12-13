@@ -55,5 +55,4 @@ const specs = swaggerJSDoc(opts);
 server.use("/api/doc", serve, setup(specs));
 
 server.use("/api", indexRouter);
-
 server.use(errorHandler);

@@ -5,6 +5,22 @@ import { userService } from "../services/user.service.js";
 import errors from "../utils/errors/errors.js";
 
 export default class UserController{
+    static async create(req, res, next){
+        try {
+            const { first_name, last_name, email, password } = req.body;        
+            if (!first_name || !last_name || !email || !password) {
+                CustomError.newError(errors.error);
+            };
+            const body = req.body;
+            const one = await userService.create(body);
+    
+            res.status(201).json({ status: "ok", one });
+    
+        } catch (error) {
+            return next(error);
+        };
+    };
+
     static async getUsers(req, res, next){
         try {
             const response = await userService.getUsers();

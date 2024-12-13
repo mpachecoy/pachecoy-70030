@@ -4,9 +4,9 @@ import { auth } from "../middlewares/auth.js"
 
 export const router = Router();
 
-router.get("/", auth, UserController.getUsers);
+router.get("/", UserController.getUsers);
 router.get("/:uid", UserController.getBy);
-router.delete("/:uid", UserController.delete);
+router.delete("/:uid",  UserController.delete);
 
 
 router.get("/simplex", (req, res) => {
