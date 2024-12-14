@@ -12,6 +12,8 @@
     "flow": "artillery run ./test/artillery/flow.yaml -o ./test/artillery/flow.json",
     "report": "artillery report ./test/artillery/flow.json",
     "image": "docker build -t codercommerce .",
+    "rename": "docker tag codercommerce martinpache/commerce:1.0.0",
+    "push": "docker push martinpache/commerce:1.0.0",
     "docker": "docker run -p 9000:9000 codercommerce",
     "mocha": "mocha ./test/mocha --mode=test",
     "chai": "mocha ./test/chai --mode=test",
