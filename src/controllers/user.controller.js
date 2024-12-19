@@ -47,6 +47,18 @@ export default class UserController{
         };
     };    
 
+    static async update(req, res, next){
+        try {
+            const { uid } = req.params;
+            const body = req.body;
+            const response = await userService.update(uid, body);
+            
+            res.status(200).json({ status:"ok", response });
+        } catch (error) {
+            return next(error)
+        };
+    };   
+
     static async createMock (req, res, next){
         try {
             const first_name = faker.person.firstName().toLocaleLowerCase();

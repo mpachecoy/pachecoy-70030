@@ -5,16 +5,16 @@ export class ProductsDao {
         return await productModel.find().lean();
     };
     
-    static async getBy(filter){
-        return await productModel.findOne(filter).lean();
+    static async getBy(pid){
+        return await productModel.findOne({_id: pid}).lean();
     };
 
     static async create(data){
         return await productModel.create(data);
     };
 
-    static async update(data){
-        return await productModel.create(data);
+    static async update(pid, data, opts){
+        return await productModel.updateOne({_id: pid}, data, opts);
     };
 
     static async delete(filter){

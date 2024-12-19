@@ -10,7 +10,7 @@ export class UserDao{
     static async create(user){
         return await userModel.create(user);
     };
-    static async updateUser(id, user){
+    static async update(id, user){
         return await userModel.updateOne({_id:id} , user);
     };
     static async delete(filter){

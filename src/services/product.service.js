@@ -9,23 +9,21 @@ class ProductService{
         return await this.dao.get();
     };
 
-    async getById(id){
-        let resultado = await this.dao.get({_id:id});
-        if(resultado.length>0) return resultado[0];
-        
-        return null;
+    async getById(pid){
+        let resultado = await this.dao.getBy({_id: pid});
+        return resultado;
     };
 
     async create(product){
         return await this.dao.create(product);
     };
 
-    async update(filter, product){
-        return await this.dao.update(filter, product);
+    async update(pid, body, opts){
+        return await this.dao.update({_id: pid}, body, opts);
     };
 
-    async delete(filter){
-        return await this.dao.delete(filter);
+    async delete(pid){
+        return await this.dao.delete({_id: pid});
     };
 }
 

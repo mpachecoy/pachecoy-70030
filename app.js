@@ -24,18 +24,6 @@ const ready = () => {
   dbConnect();
 };
 
-// const isPrimary = cluster.isPrimary;
-// if(isPrimary){
-//     console.log("Is PRIMARY " + isPrimary);
-//     console.log("PROCESS ID: " + process.pid);
-//     const numb = cpus().length;
-//     for (let i = 1; i<numb; i++){
-//         cluster.fork();
-//     };
-// }else{
-//     server.listen(port, ready);
-// };
-
 server.listen(port, ready);
 
 server.use(express.urlencoded({ extended: true }));

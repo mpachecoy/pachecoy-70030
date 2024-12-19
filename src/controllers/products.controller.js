@@ -7,7 +7,7 @@ import errors from "../utils/errors/errors.js";
 export default class ProductController{
     static async getProducts(req, res, next){
         try {
-            const { limit, page, sort, category, status } = req.query;
+            const { limit, page, sort } = req.query;
     
             const options = {
                 limit: limit || 10,
@@ -17,16 +17,6 @@ export default class ProductController{
                 },
             };
     
-            if(status) {
-                const products = await productsService.getProducts({ status }, options);
-                return res.status(200).json({status: "ok", products});
-            };
-    
-            if(category) {
-                const products = await productsService.getProducts({ category }, options);
-                return res.status(200).json({status: "ok", products});
-            };
-     
             const products = await productsService.getProducts({}, options )
         
             res.status(200).json({ status:"ok", products });
@@ -38,6 +28,7 @@ export default class ProductController{
     static async getBy(req, res, next){
         try {
             let { pid } = req.params;
+            console.log(pid)
             let product = await productsService.getById(pid);
             if(!product) return res.status(404).json({ status: "error", msg:"Prodcuto no encontrado"});
         
@@ -51,9 +42,9 @@ export default class ProductController{
         try {
             const { pid } = req.params;
             const body = req.body;
-            const product = await productsService.update(pid, body);
-            
-            res.status(200).json({status:"ok", product});
+            const opts = { new: true }
+            const product = await productsService.update(pid, body, opts);           
+            res.status(200).json({ status:"ok", product });
         } catch (error) {
             return next(error)
         };
@@ -61,8 +52,8 @@ export default class ProductController{
 
     static async create(req, res, next){
         try {
-            const { title, price, code, stock} = req.body;        
-            if (!title || !price || !code || !stock) {
+            const { title, price, code } = req.body;        
+            if (!title || !price || !code ) {
                 CustomError.newError(errors.error);
             }
             const body = req.body;
